@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Emma Collins",
+    "location": "London, UK",
+    "text": "The team completely transformed my flat into a warm, elegant space that finally feels like “me.” They listened carefully to how I live and what I value, and somehow turned that into a design that’s both stylish and incredibly comfortable. Every detail — from lighting to textures — feels thoughtful and personal.",
+    "rating": 5
+  },
+  {
+    "name": "James Turner",
+    "location": "Manchester, UK",
+    "text": "What impressed me most was how practical their ideas were. The designers didn’t just focus on looks — they created a layout that fits perfectly with my daily routine. My small apartment now feels twice as big, yet cozy at the same time. Professional, reliable, and genuinely passionate about what they do.",
+    "rating": 5
+  },
+  {
+    "name": "Olivia Bennett",
+    "location": "Brighton, UK",
+    "text": "I wanted my home to have a mix of modern and vintage elements, and the result exceeded my expectations. The team found the perfect balance — everything feels cohesive and unique. Communication was smooth throughout, and I always felt included in the process. It was a joy working with them!",
+    "rating": 5
+  },
+  {
+    "name": "Thomas Reed",
+    "location": "Bristol, UK",
+    "text": "From the very first meeting, I could tell they truly care about understanding their clients. They took time to learn about my lifestyle, hobbies, even how I spend weekends — and built the whole design around that. Now my house feels like a true reflection of who I am. Beautiful work, delivered with heart and precision.",
+    "rating": 5
+  }
+]

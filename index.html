@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/reviews.css">
+    <link rel="stylesheet" href="css/contact.css">
 
   </head>
 
@@ -25,7 +27,7 @@
     <script src="js/side-libs/particles.min.js"></script>
     <script src="js/particles.js"></script>
 
-    <nav class="nav">
+    <nav class="nav visible">
       <div class="logo nav-logo">
         <div class="logo-text">
           <span class="logo-line top">creative</span>
@@ -33,11 +35,10 @@
         </div>
       </div>
       <ul class="nav-buttons">
-        <li><button data-target="home">Home</button></li>
-        <li><button data-target="projects">About Us</button></li>
-        <li><button data-target="about">Our Projects</button></li>
-        <li><button data-target="elements">Elements of Interior</button></li>
-        <li><button data-target="reviews">Reviews</button></li>
+        <li><button data-target="header">Home</button></li>
+        <li><button data-target="about">About Us</button></li>
+        <li><button data-target="projects">Our Projects</button></li>
+        <li><button data-target="comments">Reviews</button></li>
         <li><button data-target="contact">Contacts</button></li>
       </ul>
     </nav>
@@ -57,7 +58,7 @@
     <section id="slider"></section>
     <script src="js/header/slider.js"></script>
 
-    <section class="about">
+    <section class="about" id="about">
       <div class="about-text">
         <h2>About Us</h2>
         <p>
@@ -73,45 +74,45 @@
       </div>
     </section>
 
-    <section class="projects">
-      <h2 class="projects-title">Our Projects</h2>
+    <section class="projects" id="projects">
+      <div class="projects-title-wrapper">
+        <h2 class="projects-title">Our Projects</h2>
+      </div>
       <div id="grid" class="grid"></div>
       <script src="js/projects/grid.js"></script>
     </section>
 
-    <section class="reviews">
-      <h2>What Our Clients Say</h2>
-      <div class="review-slider">
-        <div class="review active">
-          <p>“They turned my dull apartment into a piece of art. Every detail is perfect.”</p>
-          <span>- Julia K.</span>
-        </div>
-        <div class="review">
-          <p>“From first meeting to final reveal — pure professionalism.”</p>
-          <span>- Andre S.</span>
-        </div>
-        <div class="review">
-          <p>“I actually love coming to work now. Who knew an office could feel like this?”</p>
-          <span>- Clara M.</span>
-        </div>
+    <section class="reviews" id="comments">
+      <div class="reviews-title-wrapper">
+        <h2 class="reviews-title">What Our Clients Say</h2>
+      </div>
+
+      <div class="reviews-grid" id="reviews">
+        <script src="js/reviews/slider.js"></script>
       </div>
     </section>
 
-    <!-- SECTION 5: CONTACTS -->
-    <section class="contact">
-      <h2>Get in Touch</h2>
-      <div class="contact-info">
-        <p>Email: hello@creativespaces.com</p>
-        <p>Phone: +1 234 567 890</p>
-        <p>Address: 123 Modern Ave, Design City</p>
+    <section class="contact" id="contact">
+      <div class="contact-title-wrapper">
+        <h2 class="contact-title">Get in Touch</h2>
       </div>
-      <form class="contact-form">
-        <input type="text" placeholder="Your name" required>
-        <input type="email" placeholder="Your email" required>
-        <textarea placeholder="Your message" required></textarea>
-        <button type="submit">Send</button>
-      </form>
+      <div class="contact-container">
+        <div class="contact-info">
+          <p>+47 839 385 29 29</p>
+          <p>info@creative-spaces-online.github.io</p>
+          <p>12A Willowbank Rd, London NW3 4QP, UK</p>
+        </div>
+
+        <form class="contact-form">
+          <input type="text" placeholder="Your name" required>
+          <input type="email" placeholder="Your email" required>
+          <textarea placeholder="Your message" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
     </section>
+
+  <script src="js/nav.js"></script>
 
   </body>
 

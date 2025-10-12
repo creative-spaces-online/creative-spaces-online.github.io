@@ -4,10 +4,12 @@
   left: 0;
   width: 100%;
   height: 80px;
-  background: rgba(255, 255, 255, 0);
+  background: rgba(240, 236, 230, 0.5);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   opacity: 0;
   transform: translateY(-30px);
@@ -19,33 +21,98 @@
   z-index: 100;
 }
 
+.nav-logo {
+  margin-left: 2rem;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.nav.visible .nav-logo {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.nav-logo .logo-text {
+  font-size: clamp(2rem, 7vw, 3rem);
+  transform: translateY(-20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.nav-logo .logo-line.bottom {
+  margin-left: clamp(2rem, 7vw, 3rem);
+}
+
+.nav-logo .logo-text * {
+  transition: none !important;
+}
+
+.nav-logo .logo-text::after,
+.nav-logo .logo-text:hover::after,
+.nav-logo .logo-text:hover .logo-line.top,
+.nav-logo .logo-text:hover .logo-line.bottom {
+  transform: none;
+  transition: none;
+}
+
+.nav-logo .logo-text::after {
+  content: none !important;
+  display: none !important;
+}
+
+.nav-logo .logo-text:hover .logo-line.top {
+  line-height: 2.2em;
+}
+
+.nav-logo .logo-text:hover .logo-line.bottom {
+  line-height: 0.6em;
+}
+
+.nav.visible {
+  opacity: 1;
+  transform: translateY(0);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+.nav.visible .nav-logo .logo-text,
+.nav.visible .nav-buttons {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .nav-buttons {
   list-style: none;
   display: flex;
   gap: 1rem;
   margin: 0;
+  margin-left: 2rem;
   padding: 0;
 }
 
 .nav-buttons button {
-  border: 2px solid #111;
+  border: 2px solid #21201e;
   background: transparent;
-  color: #111;
+  color: #21201e;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  letter-spacing: 0rem;
   border-radius: 9999px;
   padding: 0.4rem 1rem;
-  font-family: inherit;
   font-size: 1rem;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .nav-buttons button:hover {
-  background: #111;
-  color: white;
+  background: #21201e;;
+  color: #f0ece6;
 }
 
 .nav-buttons button.active {
-  background: #111;
-  color: white;
+  background: #21201e;;
+  color: #f0ece6;
   cursor: default;
 }

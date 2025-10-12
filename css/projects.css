@@ -1,10 +1,14 @@
+.projects {
+  margin-left: 0.1rem;
+  margin-right: 0.1rem;
+}
 .projects-title {
   position: relative;
   text-align: center;
   font-size: 3rem;
   font-weight: 700;
   font-family: "Baloo Tammudu 2", sans-serif;
-  color: #111;
+  color: #21201e;
   letter-spacing: 1px;
   text-transform: uppercase;
   margin-bottom: 0rem;
@@ -25,12 +29,14 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 0.1rem;
+  background: #f0ece6;
 }
 
 .grid .slide {
   position: relative;
   overflow: hidden;
   height: 400px;
+  background: black;
 }
 
 .grid .slide img {
@@ -44,11 +50,14 @@
   position: absolute;
   bottom: 10px;
   left: 10px;
-  background: rgba(0, 0, 0, 0.6);
-  color: white;
+  background: rgba(0, 0, 0, 0.7);
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  letter-spacing: 0.07rem;
+  color: #f0ece6;
   padding: 0.3rem 0.6rem;
   border-radius: 9999px;
-  font-size: 1rem;
   opacity: 0;
   transition: opacity 0.3s ease;
   z-index: 20;
