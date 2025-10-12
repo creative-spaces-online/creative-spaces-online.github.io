@@ -1,0 +1,42 @@
+[
+    {
+        "title": "Concepts",
+        "filename": "/assets/header/0.jpg"
+    },
+    {
+        "title": "Design",
+        "filename": "assets/header/1.jpg"
+    },
+    {
+        "title": "Inspiration",
+        "filename": "assets/header/2.jpg"
+    },
+    {
+        "title": "Structure",
+        "filename": "assets/header/3.jpg"
+    },
+    {
+        "title": "Space",
+        "filename": "assets/header/4.jpg"
+    },
+    {
+        "title": "Art",
+        "filename": "assets/header/5.jpg"
+    },
+    {
+        "title": "Color",
+        "filename": "assets/header/6.jpg"
+    },
+    {
+        "title": "Light",
+        "filename": "assets/header/7.jpg"
+    },
+    {
+        "title": "Texture",
+        "filename": "assets/header/8.jpg"
+    },
+    {
+        "title": "Finishing",
+        "filename": "assets/header/9.jpg"
+    }
+]

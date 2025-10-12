@@ -1,0 +1,64 @@
+.projects-title {
+  position: relative;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: "Baloo Tammudu 2", sans-serif;
+  color: #111;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 0rem;
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 0.1rem;
+}
+
+.grid .slide {
+  position: relative;
+  overflow: hidden;
+  height: 400px;
+}
+
+.grid .slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.grid .slide span {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 20;
+}
+
+.grid .slide:hover img {
+  transform: scale(1.1);
+  opacity: 0.7;
+}
+
+.grid .slide:hover span {
+  opacity: 1;
+}

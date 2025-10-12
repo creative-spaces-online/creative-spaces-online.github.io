@@ -1,0 +1,69 @@
+#header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-text {
+  position: relative;
+
+  text-align: left;
+  font-family: "Baloo Tammudu 2", sans-serif;
+  font-size: clamp(4rem, 8vw, 8rem);
+  font-weight: 700;
+
+  user-select: none;
+}
+
+.logo-line {
+  display: block;
+  overflow: hidden;
+
+  color: #black;
+
+  height: 1em;
+  transition: line-height 0.3s ease;
+}
+
+.logo-line.top {
+  line-height: 2.2em;
+}
+
+.logo-line.bottom {
+  line-height: 0.6em;
+  margin-left: clamp(2rem, 10vw, 7rem);
+  margin-top: 0.1em;
+}
+
+.logo-text:hover .logo-line.top {
+  line-height: 1.9em;
+}
+
+.logo-text:hover .logo-line.bottom {
+  line-height: 1.0em;
+}
+
+.logo-text::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: max(1px, 0.03em);
+  background: black;
+  border-radius: 9999px;
+  opacity: 0;
+  transform: scaleX(0);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.logo-text:hover::after {
+  opacity: 1;
+  transform: scaleX(1);
+}

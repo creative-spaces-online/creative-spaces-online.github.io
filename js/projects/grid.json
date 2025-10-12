@@ -1,0 +1,50 @@
+[
+  {
+    "title": "12 Baker St, London",
+    "filename": "assets/projects/0.jpg"
+  },
+  {
+    "title": "48 Regent Rd, Manchester",
+    "filename": "assets/projects/1.jpg"
+  },
+  {
+    "title": "22 Park Ave, Birmingham",
+    "filename": "assets/projects/2.jpg"
+  },
+  {
+    "title": "9 Highfield Dr, Leeds",
+    "filename": "assets/projects/3.jpg"
+  },
+  {
+    "title": "15 Rose Ln, Liverpool",
+    "filename": "assets/projects/4.jpg"
+  },
+  {
+    "title": "31 Kingsway, Brighton",
+    "filename": "assets/projects/5.jpg"
+  },
+  {
+    "title": "4 Meadow Rd, Bristol",
+    "filename": "assets/projects/6.jpg"
+  },
+  {
+    "title": "19 Queen St, Glasgow",
+    "filename": "assets/projects/7.jpg"
+  },
+  {
+    "title": "6 Elm Court, Cambridge",
+    "filename": "assets/projects/8.jpg"
+  },
+  {
+    "title": "27 Maple Sq, Oxford",
+    "filename": "assets/projects/9.jpg"
+  },
+  {
+    "title": "8 Willow Pl, York",
+    "filename": "assets/projects/10.jpg"
+  },
+  {
+    "title": "3 Hillcrest Rd, Bath",
+    "filename": "assets/projects/11.jpg"
+  }
+]

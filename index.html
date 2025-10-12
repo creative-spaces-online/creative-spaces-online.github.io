@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creative Spaces</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/projects.css">
+
+  </head>
+
+  <body>
+    <nav class="nav">
+      <div class="logo nav-logo">
+        <div class="logo-text">
+          <span class="logo-line top">creative</span>
+          <span class="logo-line bottom">spaces.</span>
+        </div>
+      </div>
+      <ul class="nav-buttons">
+        <li><button data-target="home">Home</button></li>
+        <li><button data-target="projects">About Us</button></li>
+        <li><button data-target="about">Our Projects</button></li>
+        <li><button data-target="elements">Elements of Interior</button></li>
+        <li><button data-target="reviews">Reviews</button></li>
+        <li><button data-target="contact">Contacts</button></li>
+      </ul>
+    </nav>
+
+    <section class="page header" id="header">
+      <div class="logo">
+        <div class="logo-text">
+          <span class="logo-line top">creative</span>
+          <span class="logo-line bottom">spaces.</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="slider"></section>
+    <script src="js/header/slider.js"></script>
+
+    <section class="about">
+      <div class="about-text">
+        <h2>About Us</h2>
+        <p>
+          At the Interior Design Counsultancy, creativity meets purpose. Our team brings together experienced professionals who not only design beautiful interiors but create living spaces that reflect the personality and lifestyle of those who inhabit them.
+          <br><br>
+          We specialize in crafting interiors in a wide range of styles — from timeless classics and elegant minimalism to bold contemporary concepts. Every project begins with understanding how a person lives, works, and feels within their environment. This human-centered approach allows us to design spaces that are not only visually harmonious but also deeply personal and functional.
+          <br><br>
+          Our designers manage every stage of the process — from concept development and material selection to project visualization and implementation. Attention to detail, balance between aesthetics and comfort, and a deep respect for individuality are at the heart of everything we do.
+        </p>
+      </div>
+      <div class="about-image">
+        <img src="assets/about/0.jpg">
+      </div>
+    </section>
+
+    <section class="projects">
+      <h2 class="projects-title">Our Projects</h2>
+      <div id="grid" class="grid"></div>
+      <script src="js/projects/grid.js"></script>
+    </section>
+
+    <section class="reviews">
+      <h2>What Our Clients Say</h2>
+      <div class="review-slider">
+        <div class="review active">
+          <p>“They turned my dull apartment into a piece of art. Every detail is perfect.”</p>
+          <span>- Julia K.</span>
+        </div>
+        <div class="review">
+          <p>“From first meeting to final reveal — pure professionalism.”</p>
+          <span>- Andre S.</span>
+        </div>
+        <div class="review">
+          <p>“I actually love coming to work now. Who knew an office could feel like this?”</p>
+          <span>- Clara M.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: CONTACTS -->
+    <section class="contact">
+      <h2>Get in Touch</h2>
+      <div class="contact-info">
+        <p>Email: hello@creativespaces.com</p>
+        <p>Phone: +1 234 567 890</p>
+        <p>Address: 123 Modern Ave, Design City</p>
+      </div>
+      <form class="contact-form">
+        <input type="text" placeholder="Your name" required>
+        <input type="email" placeholder="Your email" required>
+        <textarea placeholder="Your message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+  </body>
+
+</html>
