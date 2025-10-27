@@ -7,10 +7,7 @@
   border-radius: 30px;
   padding: 3rem;
   
-  background: rgba(255, 255, 255, 0.1);
-  border: 5px solid #21201e;
-  backdrop-filter: blur(3px);
-  -webkit-backdrop-filter: blur(3px);
+  background: #21201e;
 }
 
 .about .about-text {
@@ -22,7 +19,7 @@
   font-size: 1.4rem;
   font-weight: 400;
   letter-spacing: 0.07rem;
-  color: #21201e;
+  color: #f0ece6;
 
 }
 
@@ -33,6 +30,7 @@
   font-weight: 700;
   margin-top: -1rem;
   margin-bottom: 0rem;
+  color: #f0ece6;
 
   user-select: none;
 }
